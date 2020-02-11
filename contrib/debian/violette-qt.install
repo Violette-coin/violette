@@ -1,0 +1,11 @@
+usr/local/bin/violette-qt usr/bin
+share/pixmaps/violette16.png usr/share/pixmaps
+share/pixmaps/violette32.png usr/share/pixmaps
+share/pixmaps/violette128.png usr/share/pixmaps
+share/pixmaps/violette256.png usr/share/pixmaps
+share/pixmaps/violette-testnet32.png usr/share/pixmaps
+share/pixmaps/violette-testnet128.png usr/share/pixmaps
+share/pixmaps/violette-testnet256.png usr/share/pixmaps
+debian/violette-qt.desktop usr/share/applications
+debian/violette-testnet-qt.desktop usr/share/applications
+debian/violette-qt.protocol usr/share/kde4/services/

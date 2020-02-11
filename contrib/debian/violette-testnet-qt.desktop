@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Violette (testnet)
+Comment=Desktop allet for Violette Cryptocurrency (testnet)
+Comment[de]=Offizieller Client für die Kryptowährung Violette (testnet)
+Exec=violette-qt -testnet %u
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/violette-testnet128.png
+MimeType=x-scheme-handler/violette;
+Categories=Application;Network;
