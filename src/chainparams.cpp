@@ -76,11 +76,11 @@ public:
         vAlertPubKey = ParseHex("040797a85cafdf223783f0e31b7e3554b61f873efb0abaa6fa56632308ae2d7309a8afdf6c221a07f73fc288c7626f3cd97a6121241db0d60e0e375aaa87f4b9a2");
         nDefaultPort = 8388;
 
-        genesis = CreateGenesisBlock(1581427684, 400128579, 0x1e0fffff, 1, 0);
+        genesis = CreateGenesisBlock(1581427686, 500242045, 0x1e0fffff, 1, 0);
 //        MineGenesisBlock(genesis, consensus.powLimit);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("c6a4d7ac98073a9250cf6db0dca23dda5fb84d93e23d30b999ba6c5c9955fa91"));
-        assert(genesis.hashMerkleRoot == uint256S("df7cbc9c6fce19216e37215fe459369e40d414d2c66cb81f6c515b05270452d0"));
+        assert(consensus.hashGenesisBlock == uint256S("843a90aa80dd935bd6a567337d53e391f9e7729d18ff7138c9a1cb6f7148a14e"));
+        assert(genesis.hashMerkleRoot == uint256S("d0a99e1eaa098dd4838adcf94d376ae2981ab6fadfd9763dd66a397f4aa22f14"));
 
         // nodes with support for servicebits filtering should be at the top
         vSeeds.emplace_back("35.223.95.142");
@@ -107,7 +107,7 @@ public:
 
         checkpointData = {
             {
-                {0, uint256S("c6a4d7ac98073a9250cf6db0dca23dda5fb84d93e23d30b999ba6c5c9955fa91")},
+                {0, uint256S("843a90aa80dd935bd6a567337d53e391f9e7729d18ff7138c9a1cb6f7148a14e")},
             }
         };
 
@@ -244,7 +244,7 @@ public:
 
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = true;
-        consensus.nStartMiningTime = 1581296460;
+        consensus.nStartMiningTime = 1581501960;
 
         // The best chain should have at least this much work.
         consensus.nMinimumChainWork = uint256S("0x00");
