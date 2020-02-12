@@ -56,7 +56,7 @@ public:
         consensus.nTotalPOWBlock = consensus.nPOWBlockEpoch * 4; //4 epoch
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
-        consensus.nStartMiningTime = 1581513000;
+        consensus.nStartMiningTime = 1581520200;
 
         // The best chain should have at least this much work.
         consensus.nMinimumChainWork = uint256S("0x00"); // 350000

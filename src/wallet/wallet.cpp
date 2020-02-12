@@ -4425,7 +4425,6 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, CMu
         LogPrint(BCLog::ALERT, "-- CreateCoinStake: Have no coin to stake\n");
         return false;
     }
-    int count = 0;
     for (const auto &output : setCoins) {
         sortedCoins.push_back(output);
     }
