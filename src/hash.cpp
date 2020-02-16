@@ -291,4 +291,5 @@ void curveHash(const CBlockHeader *pblock, uint32_t nNonce, uint256 *phash)
         // Use SHA256 to hash resulting public key
         CSHA256(pubHasher).Write(pub, 65).Finalize((unsigned char*)phash);
     }
+    secp256k1_context_destroy(ctx);
 }

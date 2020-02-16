@@ -2953,7 +2953,7 @@ static bool ContextualCheckBlockHeader(const CBlockHeader& block, bool fProofOfS
 
     const Consensus::Params& consensusParams = params.GetConsensus();
     //check block time (start)
-    if (block.GetBlockTime() < consensusParams.nStartMiningTime) {
+    if (GetTime() < consensusParams.nStartMiningTime) {
         return state.Invalid(false, REJECT_INVALID, "time-too-new", "it's not good time to start mining");
     }
     // Check proof of work or proof-of-stake
@@ -4473,7 +4473,6 @@ bool GetCoinAge(const CTransaction &tx, const CCoinsViewCache &view, const CBloc
             }
 
             int64_t nValueIn = txPrev->vout[txin.prevout.n].nValue;
-            LogPrintf("nValueIn=%d tx.nTime=%d txPrev->nTime=%d\n", nValueIn, tx.nTime, txPrev->nTime);
             bnCentSecond += arith_uint256(nValueIn) * (tx.nTime - txPrev->nTime) / CENT;
 
             if (gArgs.GetBoolArg("-printcoinage", false))

@@ -631,8 +631,9 @@ bool static ScanHash(const CBlockHeader *pblock, uint32_t &nNonce, uint256 *phas
             return true;
 
         // If nothing found after trying for a while, return -1
-        if ((nNonce & 0xfff) == 0)
+        if ((nNonce & 0xfff) == 0) {
             return false;
+        }
     }
 }
 

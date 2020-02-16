@@ -44,6 +44,8 @@ public:
         consensus.nStakeMinConfirmations = 240; // 240 * 2 minutes
         consensus.nModifierInterval = 10 * 60; // Modifier interval: time to elapse before new modifier is computed
         consensus.nCoinbaseMaturity = 100;
+        consensus.nDgwPastBlocks = 30;
+        consensus.nDGWStartHeight = 2000;
 
         // POW block consensus
         consensus.nPOWBlockEpoch = 131400;
@@ -138,6 +140,8 @@ public:
         consensus.nStakeMinConfirmations = 20; // test net min age is 200 confirms
         consensus.nModifierInterval = 10 * 60; // Modifier interval: time to elapse before new modifier is computed
         consensus.nCoinbaseMaturity = 10; // 50 confirmations
+        consensus.nDgwPastBlocks = 30;
+        consensus.nDGWStartHeight = 0;
 
         // POW block consensus
         consensus.nPOWBlockEpoch = 200;
